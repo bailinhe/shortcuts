@@ -1,0 +1,80 @@
+[MAIN]
+# Use multiple processes to speed up Pylint  
+jobs=1
+
+# Files or directories to be skipped
+ignore=CVS
+
+[MESSAGES CONTROL]
+# Disable some common warnings that aren't crucial for this project
+disable=missing-module-docstring,
+        invalid-name,
+        too-few-public-methods
+
+[REPORTS]
+# Set the output format  
+output-format=text
+
+# Tells whether to display a full report or only the messages
+reports=no
+
+# Activate the evaluation score
+score=yes
+
+[FORMAT]
+# Expected format of line ending
+expected-line-ending-format=
+
+# Regexp for a line that is allowed to be longer than the limit
+ignore-long-lines=^\s*(# )?<?https?://\S+>?$
+
+# Number of spaces of indent required inside a hanging or continued line
+indent-after-paren=2
+
+# String used as indentation unit - SET TO 2 SPACES
+indent-string="  "
+
+# Maximum number of characters on a single line
+max-line-length=88
+
+# Maximum number of lines in a module
+max-module-lines=1000
+
+[BASIC]
+# Good variable names which should always be accepted
+good-names=i,
+           j,
+           k,
+           ex,
+           Run,
+           _,
+           kw,
+           org
+
+# Naming style matching correct variable names
+variable-naming-style=snake_case
+
+# Naming style matching correct function names  
+function-naming-style=snake_case
+
+# Naming style matching correct class names
+class-naming-style=PascalCase
+
+# Naming style matching correct constant names
+const-naming-style=UPPER_CASE
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=5
+
+# Maximum number of attributes for a class
+max-attributes=7
+
+# Maximum number of branch for function / method body
+max-branches=12
+
+# Maximum number of locals for function / method body
+max-locals=15
+
+# Maximum number of statements in function / method body
+max-statements=50
